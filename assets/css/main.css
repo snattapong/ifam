@@ -1,0 +1,15 @@
+body{
+}
+.hidden{
+	display : none;
+}
+
+.table-btn{
+	margin : 5px 5px;
+}
+
+.closeAlarm{
+	text-decoration: line-through;
+}
+
+.alarm-tooltip + .tooltip > .tooltip-inner {background-color: #f00;}
