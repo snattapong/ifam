@@ -10,6 +10,7 @@ class PersonModel  extends CI_Model  {
     }
 
 	function getPersons(){
+		 $this->db->where('isWork',1);
 		 $this->db->order_by('order','desc');
 		 return $this->db->get('person');
 	}

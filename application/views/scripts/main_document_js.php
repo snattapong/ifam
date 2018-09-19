@@ -139,7 +139,6 @@ $('#ok-btn').click(function(){
 				}
 
 			   if( $('#add-new-item').data("edit-mode") == "false"){ 
-						  alert(false);
 
 						  $.get("<?=site_url('command/newDocumentInfo')?>",function(data){
 							  if(data.success == true){
@@ -160,7 +159,6 @@ $('#ok-btn').click(function(){
 						  },"json");
 				}
 				else{
-					  alert(true);
 					console.log("YAH");
 					$('#insert-doc').show();
 				   $('#add-new-item')

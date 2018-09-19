@@ -10,6 +10,7 @@
 		<?php $count=0; ?>
      <?php foreach($persons->result() as $person): ?>
 	  			<?php if($count++ == 0) continue; ?>
+				<?php if($person->personID == 2) continue; ?>
 				  <div class='col-sm-12 col-xs-12 col-md-6'>
 							 <div class='thumbnail'>
 							 <img class='person' src='<?= base_url("avatars/".$person->avatar)?>' data-id='<?= $person->personID ?>' data-name='<?= $person->forName.$person->firstName ?>'>
